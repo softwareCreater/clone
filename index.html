@@ -332,8 +332,8 @@
         }, 300);
         currentMusicTime.innerHTML = '00 : 00';
     }
-    
-setMusic(1);
+    let u = parseInt(prompt("enter num 0-5"));
+setMusic(u);
   ////////////////format time duration 00:00///////////////////
   const formaTtime =(time)=>{
     let min = Math.floor(time/60);
