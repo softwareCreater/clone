@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jioSavan</title>
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+</head>
+<body>
+
+    <audio src="" id="audio-src"></audio>
+    <!-- **************************home section start **************** -->
+
+    <section class="home-section">
+        <!-- carausel -->
+        <div class="carousel">
+            <img src="img/IMG-20220504-WA0047.jpg" alt="" class="active">
+            <img src="img/IMG-20220504-WA0048.jpg" alt="">
+            <img src="img/IMG-20220504-WA0049.jpg" alt="">
+            <img src="img/IMG-20220504-WA0050.jpg" alt="">
+            <img src="img/IMG-20220504-WA0051.jpg" alt="">
+        </div>
+        <!-- playlist -->
+        <h1 class="heading">recently played</h1>
+        <div class="playlists-group">
+            <div class="playlist-card">
+                <img src="img/IMG-20220504-WA0047.jpg" class="play-list-card" alt="">
+                <p class="playlist-card-name">top international</p>
+            </div>
+            <div class="playlist-card">
+                <img src="img/IMG-20220504-WA0048.jpg" class="play-list-card" alt="">
+                <p class="playlist-card-name">BTS collections</p>
+            </div>
+            <div class="playlist-card">
+                <img src="img/IMG-20220504-WA0049.jpg" class="play-list-card" alt="">
+                <p class="playlist-card-name">bollywood hits</p>
+            </div>
+            <div class="playlist-card">
+                <img src="img/IMG-20220504-WA0050.jpg" class="play-list-card" alt="">
+                <p class="playlist-card-name">top 50</p>
+            </div>
+            <div class="playlist-card">
+                <img src="img/IMG-20220504-WA0051.jpg" class="play-list-card" alt="">
+                <p class="playlist-card-name">Arijit Singh</p>
+            </div>
+        </div>
+
+        <h1 class="heading">trending</h1>
+        <div class="playlists-group">
+            <div class="playlist-card">
+                <img src="img/IMG-20220504-WA0047.jpg" class="play-list-card" alt="">
+                <p class="playlist-card-name">top international</p>
+            </div>
+            <div class="playlist-card">
+                <img src="img/IMG-20220504-WA0048.jpg" class="play-list-card" alt="">
+                <p class="playlist-card-name">BTS collections</p>
+            </div>
+            <div class="playlist-card">
+                <img src="img/IMG-20220504-WA0049.jpg" class="play-list-card" alt="">
+                <p class="playlist-card-name">bollywood hits</p>
+            </div>
+            <div class="playlist-card">
+                <img src="img/IMG-20220504-WA0050.jpg" class="play-list-card" alt="">
+                <p class="playlist-card-name">top 50</p>
+            </div>
+            <div class="playlist-card">
+                <img src="img/IMG-20220504-WA0051.jpg" class="play-list-card" alt="">
+                <p class="playlist-card-name">Arijit Singh</p>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!-- *************************music playe section *********************** -->
+
+    <section class="music-player-section"> <!--active-->
+        <img src="img/IMG-20220504-WA0053.jpg" class="back-btn icon hide" alt="">
+        <img src="img/IMG-20220504-WA0051.jpg" class="nav-btn icon hide" alt="">
+        <h1 class="current-song-name"></h1>
+        <p class="artist-name hide">artist </p>
+        <img src="img/IMG-20220504-WA0050.jpg" class="cover hide" alt="">
+        <div class="seek-bar-container">
+            <input type="range" name="" id=""class="music-seek-bar" value="0" >
+            <p class="current-time hide">00 : 00</p>
+            <p class="duration hide">00 : 00</p>
+        </div>
+        <div class="controls">
+            <span class="fas fa-redo"></span>
+            <div class="main">
+                <i class="fas fa-backward active"></i>
+                <i class="fas fa-play active"></i>
+                <i class="fas fa-pause "></i>
+                <i class="fas fa-forward active"></i>
+            </div>
+            <input type="range" class="volume-slider" max="1"value="1" step="0.1">
+            <span class="fas fa-volume-up"></span>
+        </div>
+    </section>
+
+    <section class="playlist">
+        <!-- <img src="img/IMG-20220504-WA0047.jpg" class="back-btn icon"> -->
+        <h1 class="title">playlist</h1>
+        <div class="quence active">
+            <div class="quence-cover">
+                <img src="img/IMG-20220504-WA0049.jpg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">song 1</p>
+        </div>
+        <div class="quence">
+            <div class="quence-cover">
+                <img src="img/IMG-20220504-WA0050.jpg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">song 2</p>
+        </div>
+        <div class="quence">
+            <div class="quence-cover">
+                <img src="img/IMG-20220504-WA0051.jpg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">song 3</p>
+        </div>
+        <div class="quence">
+            <div class="quence-cover">
+                <img src="img/IMG-20220504-WA0052.jpg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">song 4</p>
+        </div>
+        <div class="quence ">
+            <div class="quence-cover">
+                <img src="img/IMG-20220504-WA0053.jpg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">song 5</p>
+        </div>
+        <div class="quence">
+            <div class="quence-cover">
+                <img src="img/IMG-20220504-WA0047.jpg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">song 6</p>
+        </div>
+        <div class="quence">
+            <div class="quence-cover">
+                <img src="img/IMG-20220504-WA0049.jpg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">song 1</p>
+        </div>
+        <div class="quence">
+            <div class="quence-cover">
+                <img src="img/IMG-20220504-WA0052.jpg" alt="">
+                <i class="fas fa-oause"></i>
+            </div>
+            <p class="name">song 4</p>
+        </div>
+        <div class="quence">
+            <div class="quence-cover">
+                <img src="img/IMG-20220504-WA0053.jpg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">song 5</p>
+        </div>
+    
+    </section>
+    
+    <script>
+        const mus_api = [
+        {
+          title: "Kabhi jo badal barse",
+          src: "song/kabhi.mp3",
+          cover: "img/IMG-20220504-WA0047.jpg",
+          artist: "Arijit singh",
+        },
+        {
+          title: "Aaj fir tumpe pyar aaya hai",
+          src: "song/a.mp3",
+          cover: "img/IMG-20220504-WA0048.jpg",
+          artist: "unknown",
+        },
+        {
+          title: "bheegi bheegi sadko pe",
+          src: "song/b.mp3",
+          cover: "img/IMG-20220504-WA0049.jpg",
+          artist: "arijit singh",
+        },
+        {
+          title: "Is kadar hamko",
+          src: "song/i.mp3",
+          cover: "img/IMG-20220504-WA0050.jpg",
+          artist: "Darshan ravel",
+        },
+        {
+          title: "Tum hi ho",
+          src: "song/t.mp3",
+          cover: "img/IMG-20220504-WA0051.jpg",
+          artist: "arijit singh",
+        },
+        {
+          title: "ashik banaya",
+          src: "song/ab.m4a",
+          cover: "img/IMG-20220504-WA0052.jpg",
+          artist: "himesh reshamiya",
+        },
+      ];
+
+
+    //   *******carausel********************
+    const carausel = [...document.querySelectorAll('.carousel img')];
+    let carouselImageIndex = 0;
+    const changeCarausel = ()=>{
+        carausel[carouselImageIndex].classList.toggle('active');
+        if(carouselImageIndex >= carausel.length-1){
+            carouselImageIndex = 0;
+        }
+        else{
+            carouselImageIndex ++;
+        }
+        carausel[carouselImageIndex].classList.toggle('active');
+    }
+
+    setInterval(() => {
+        changeCarausel();
+    }, 3000);
+
+
+
+    ///////////////////////////// navigations//////////////////////////
+
+    /////////////////////////////toggle music player/////////////////////
+
+    const musicPlayerSection = document.querySelector('.music-player-section');
+    let clickCount = 1;
+    musicPlayerSection.addEventListener('click',()=>{
+        if(clickCount>=2){
+            musicPlayerSection.classList.add('active');
+            clickCount = 1;
+            return;
+        }
+        clickCount++;
+        setTimeout(() => {
+            clickCount =1;
+        }, 250);
+    })
+
+
+    //////////////back from music player /////////////////
+
+    const backToHomeBtn = document.querySelector('.music-player-section .back-btn');
+    backToHomeBtn.addEventListener('click',()=>{
+        musicPlayerSection.classList.remove('active');
+    });
+
+    ////////////////////////////// access playlist////////////////////////////////////////////
+    const playListSection = document.querySelector('.playlist');
+    const navBtn = document.querySelector('.music-player-section .nav-btn');
+
+    navBtn.addEventListener('click',()=>{
+        playListSection.classList.add('active');
+    });
+
+
+    ////////////////////// back from playlist to music player////////////////////
+
+    // const backToMusicPlayer = document.querySelector('playlist');
+    // backToMusicPlayer.addEventListener('click',()=>{
+        // playListSection.classList.remove('active');
+    // });
+
+    //////////////////////navigation done /////////////////
+
+    /////////////////music/////////////////
+
+    let currentMusic = 0;
+    const music = document.querySelector('#audio-src');
+    const seekbar = document.querySelector('.music-seek-bar');
+    const songName = document.querySelector('.current-song-name');
+    const artistName = document.querySelector('.artist-name');
+    const cover = document.querySelector('.cover');
+    const currentMusicTime = document.querySelector('.current-time');
+    const musicDuration = document.querySelector('.duration');
+
+    ///////select all bottom keys //////
+
+    const forwardBtn = document.querySelector('i.fa-farward');
+    const backwardBtn = document.querySelector('i.fa-backward');
+    const playBtn = document.querySelector('i.fa-play');
+    const pauseBtn = document.querySelector('i.fa-pause');
+    const redoBtn = document.querySelector('span.fa-redo');
+    const volumeUpBtn = document.querySelector('span.fa-volume-up');
+    const volumeSliderBtn = document.querySelector('.volume-slider');
+
+
+    ////playbtn click event //////
+
+    playBtn.addEventListener('click',()=>{
+        music.play();
+        playBtn.classList.remove('active');
+        pauseBtn.classList.add('active');
+    });
+
+    pauseBtn.addEventListener('click',()=>{
+        music.pause();
+        pauseBtn.classList.remove('active');
+        playBtn.classList.add('active');
+    })
+
+    ////////////////////function for setting up music////////////
+  
+
+    const setMusic =(i)=>{
+
+        seekbar.value = 0;
+        let song = mus_api[i];
+        currentMusic = i;
+        music.src = mus_api[i].src;
+        
+        songName.innerHTML = mus_api[i].title;
+        artistName.innerHTML = mus_api[i].artist;
+        cover.src = mus_api[i].cover;
+        
+        setTimeout(() => {
+            seekbar.max = music.duration;
+            musicDuration.innerHTML = formaTtime(music.duration);
+        }, 300);
+        currentMusicTime.innerHTML = '00 : 00';
+    }
+    
+setMusic(1);
+  ////////////////format time duration 00:00///////////////////
+  const formaTtime =(time)=>{
+    let min = Math.floor(time/60);
+    if(min<10){
+        min = '0' + min;
+    }
+        let sec = Math.floor(time%60);
+        if(sec<10){
+            sec = '0'+sec;
+        }
+    return `${min} : ${sec}`;
+}
+
+
+
+
+
+////////////////seekbar events ///////////////////
+setInterval(() => {
+    seekbar.value = music.currentTime;
+    currentMusicTime.innerHTML = formaTtime(music.currentTime);
+    if(Math.floor(music.currentTime == Math.floor(seekbar.value))){
+        if(redoBtn.className.includes('active')){
+            setMusic(currentMusic);
+            playBtn.click();
+        }
+        else{
+            forwardBtn.click();
+        }
+    }
+}, 500);
+
+seekbar.addEventListener('change',()=>{
+    music.currentTime = seekbar.value;
+});
+
+/////////////////////////forward button/////////////////////////
+forwardBtn.addEventListener('click',()=>{
+    console.log('fetched');
+    if(currentMusic >= mus_api.length-1){
+        currentMusic = 0;
+    }
+    else{
+        currentMusic++;
+    }
+    setMusic(currentMusic);
+    playBtn.click();
+})
+
+////////////////backward button////////////////////////
+forwardBtn.addEventListener('click',()=>{
+    console.log('fetched');
+    if(currentMusic <= 0){
+        currentMusic = mus_api.length -1;
+    }
+    else{
+        currentMusic--;
+    }
+    setMusic(currentMusic);
+    playBtn.click();
+});
+
+
+/////////////repeat button ////////
+redoBtn.addEventListener('click',()=>{
+    redoBtn.classList.toggle('active');
+});
+
+
+//////////////////volume section /////////////////////////
+
+volumeUpBtn.addEventListener('click',()=>{
+    volumeUpBtn.classList.toggle('active');
+    volumeSliderBtn.classList.toggle('active');
+});
+volumeSliderBtn.addEventListener('input',()=>{
+    music.volume = volumeSliderBtn.value;
+});
+    </script>
+</body>
+</html>
